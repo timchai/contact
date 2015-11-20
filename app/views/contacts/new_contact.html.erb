@@ -1,0 +1,18 @@
+<%= form_tag '/contacts', method: :post do %>
+<div>
+  <%= label_tag :message, "Enter contacts here:" %>
+  <%= text_area_tag :first_name %>
+  <%= text_area_tag :middle_name %>
+  <%= text_area_tag :last_name %>
+  <%= text_area_tag :email %>
+  <%= text_area_tag :phone %>
+</div>
+<div>
+  <%= submit_tag "Send information:" %>
+</div>
+
+<% end %>  
+
+
+  
+

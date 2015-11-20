@@ -1,0 +1,11 @@
+<h1><%= @contact.first_name %> <%= @contact.middle_name %> <%= @contact.last_name %></h1>
+<h2>Email: <%= @contact.email %></h2>
+<h2>Phone: <%= @contact.phone %></h2>
+<h2>Bio: <%= @contact.bio %></h2>
+<h2><%= @coordinates.latitude %></h2>
+<h2><%= @coordinates.longitude %></h2>
+
+<h2>Contact Created at: <%= @contact.friendly_created_at %></h2>
+
+<%= link_to "Delete", "/contacts/#{@contact.id}", method: :delete%>
+<%= link_to "Edit", "/contacts/#{@contact.id}/edit" %>

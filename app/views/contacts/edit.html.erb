@@ -1,0 +1,43 @@
+<%= form_tag "/contacts/#{@contact.id}", method: :patch do %>
+
+<div>
+  <%= label_tag :first_name, "Enter first name:" %>
+  <%= text_area_tag :first_name, @contact.first_name %>
+</div>
+
+<div>
+  <%= label_tag :middle_name, "Enter middle name:" %>
+  <%= text_area_tag :middle_name, @contact.middle_name %> 
+</div>
+
+<div>
+  <%= label_tag :last_name, "Enter last name:" %>
+  <%= text_area_tag :last_name, @contact.last_name %>
+</div>
+
+<div>
+  <%= label_tag :email, "Enter email:" %>
+  <%= text_area_tag :email, @contact.email %>
+</div>
+
+<div>
+  <%= label_tag :phone, "Enter phone number:" %>
+  <%= text_area_tag :phone, @contact.phone %>
+</div>
+
+<div>
+  <%= label_tag :bio, "Enter bio:" %>
+  <%= text_area_tag :bio, @contact.bio %>
+</div>
+
+<div>
+  <%= label_tag :address, "Enter address:" %>
+  <%= text_area_tag :address, @coordinates.latitude %>
+  <%= text_area_tag :address, @coordinates.longitude %>
+</div>
+
+<div>
+  <%= submit_tag "Send contact information:" %>
+</div>
+
+<% end %>

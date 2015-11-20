@@ -1,0 +1,43 @@
+<h1>New Contact</h1>
+<%= form_tag '/contacts', method: :post do %>
+
+<div>
+  <%= label_tag :first_name, "Enter First Name:" %>
+  <%= text_area_tag :first_name %>
+</div>
+
+<div>
+  <%= label_tag :middle_name, "Enter middle name:" %>
+  <%= text_area_tag :middle_name %>
+</div>
+
+<div>
+  <%= label_tag :last_name, "Enter last name:" %>
+  <%= text_area_tag :last_name %>
+</div>
+
+<div>
+  <%= label_tag :email, "Enter email:" %>
+  <%= text_area_tag :email %>
+</div>
+
+<div>
+  <%= label_tag :price, "Enter phone number:" %>
+  <%= text_area_tag :price %>
+</div>
+
+<div>
+  <%= label_tag :bio, "Enter bio:" %>
+  <%= text_area_tag :bio %>
+</div>
+
+<div>
+  <%= label_tag :address, "Enter address:" %>
+  <%= text_area_tag :address %>
+</div>
+  
+<div>
+  <%= submit_tag "Send Contact information:" %>
+</div>
+
+<% end %>
