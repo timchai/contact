@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 gem 'geocoder', '~> 1.2', '>= 1.2.12'
-
+gem 'seed_dump'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'mysql2', '~> 0.3.20'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -31,7 +31,6 @@ gem 'seed_dump'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
