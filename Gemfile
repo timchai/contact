@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'geocoder', '~> 1.2', '>= 1.2.12'
+gem 'geocoder', '~> 1.6'
 gem 'seed_dump'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
